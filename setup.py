@@ -7,7 +7,7 @@ with open('README.md') as f:
 
 
 setup(
-    name='pymata4',
+    name='pymata4-for-test',
     packages=['pymata4'],
     install_requires=['pyserial'],
 
