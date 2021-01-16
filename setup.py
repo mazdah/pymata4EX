@@ -18,8 +18,8 @@ setup(
 
     author='Alan Yorinks',
     author_email='MisterYsLab@gmail.com',
-    url='https://github.com/MrYsLab/pymata4',
-    download_url='https://github.com/MrYsLab/pymata4',
+    url='https://github.com/mazdah/pymata4-for-test.git',
+    download_url='https://github.com/mazdah/pymata4-for-test.git',
     keywords=['Firmata', 'Arduino', 'Protocol', 'Python'],
     classifiers=[
         'Development Status :: 5 - Production/Stable',
