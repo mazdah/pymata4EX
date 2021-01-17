@@ -34,7 +34,7 @@ from pymata4EX.private_constants import PrivateConstants
 
 
 # noinspection PyPep8
-class Pymata4(threading.Thread):
+class Pymata4EX(threading.Thread):
     """
     This class exposes and implements the PymataExpress Non-asyncio API.
     It uses threading to accommodate concurrency.
