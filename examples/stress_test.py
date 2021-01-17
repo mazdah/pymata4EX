@@ -18,7 +18,7 @@
 import sys
 import time
 
-from pymata4 import pymata4
+from pymata4EX import pymata4EX
 
 
 # This example tests multi-threading by
@@ -52,7 +52,7 @@ def stress_test(my_board, loop_count):
     print(f'Execution time: {time.time() - start_time} seconds for {loop_count} iterations.')
 
 
-board = pymata4.Pymata4()
+board = pymata4EX.Pymata4()
 try:
     stress_test(board, 10000)
     board.shutdown()

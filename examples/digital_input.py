@@ -17,7 +17,7 @@
 
 import time
 import sys
-from pymata4 import pymata4
+from pymata4EX import pymata4EX
 
 """
 Setup a pin for digital input and monitor its changes
@@ -54,7 +54,7 @@ def digital_in(my_board, pin):
      digital input. Any changes on this pin will
      be reported through the call back function.
 
-     :param my_board: a pymata4 instance
+     :param my_board: a pymata4EX instance
      :param pin: Arduino pin number
      """
 
@@ -74,7 +74,7 @@ def digital_in(my_board, pin):
             board.shutdown()
             sys.exit(0)
 
-board = pymata4.Pymata4()
+board = pymata4EX.Pymata4()
 
 try:
     digital_in(board, DIGITAL_PIN)

@@ -17,7 +17,7 @@
 
 import sys
 import time
-from pymata4 import pymata4
+from pymata4EX import pymata4EX
 
 """
 This example sets up and control an ADXL345 i2c accelerometer.
@@ -67,7 +67,7 @@ def adxl345(my_board):
             sys.exit(0)
 
 
-board = pymata4.Pymata4()
+board = pymata4EX.Pymata4()
 try:
     adxl345(board)
 except KeyboardInterrupt:

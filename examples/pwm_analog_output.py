@@ -18,7 +18,7 @@
 import sys
 import time
 
-from pymata4 import pymata4
+from pymata4EX import pymata4EX
 
 """
 Setup a pin for PWM (aka analog) output and output
@@ -50,7 +50,7 @@ def set_intensity(my_board, pin):
     my_board.pwm_write(pin, 0)
 
 
-board = pymata4.Pymata4()
+board = pymata4EX.Pymata4()
 set_intensity(board, 9)
 
 # here we clean up after the program completes.

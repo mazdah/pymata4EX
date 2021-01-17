@@ -17,7 +17,7 @@
 
 import sys
 
-from pymata4 import pymata4
+from pymata4EX import pymata4EX
 
 """
 This example will retrieve the Firmata analog map and display
@@ -34,7 +34,7 @@ def retrieve_analog_map(my_board):
     print(analog_map)
 
 
-board = pymata4.Pymata4()
+board = pymata4EX.Pymata4()
 try:
     retrieve_analog_map(board)
     board.shutdown()

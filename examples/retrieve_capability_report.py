@@ -17,7 +17,7 @@
 
 import sys
 
-from pymata4 import pymata4
+from pymata4EX import pymata4EX
 
 """
 This is a demo of retrieving a Firmata capability report and
@@ -72,8 +72,8 @@ def retrieve_capability_report(my_board):
     format_capability_report(report)
 
 
-# instantiate pymata4
-board = pymata4.Pymata4()
+# instantiate pymata4EX
+board = pymata4EX.Pymata4()
 
 try:
     # run the program

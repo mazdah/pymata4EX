@@ -17,7 +17,7 @@
 
 import sys
 
-from pymata4 import pymata4
+from pymata4EX import pymata4EX
 
 """
 This example retrieves the Firmata version, which consists
@@ -28,13 +28,13 @@ of a version number and name of the file.
 def retrieve_firmware_version(my_board):
     """
 
-    :param my_board: pymata4
+    :param my_board: pymata4EX
     :return: the firmware version
     """
     print(my_board.get_firmware_version())
 
 
-board = pymata4.Pymata4()
+board = pymata4EX.Pymata4()
 try:
     retrieve_firmware_version(board)
     board.shutdown()

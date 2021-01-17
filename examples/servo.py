@@ -18,7 +18,7 @@
 import sys
 import time
 
-from pymata4 import pymata4
+from pymata4EX import pymata4EX
 
 """
 This example will set a servo to 0, 90 and 180 degree
@@ -31,7 +31,7 @@ def servo(my_board, pin):
     Set a pin to servo mode and then adjust
     its position.
 
-    :param my_board: pymata4
+    :param my_board: pymata4EX
     :param pin: pin to be controlled
     """
 
@@ -48,7 +48,7 @@ def servo(my_board, pin):
     my_board.servo_write(pin, 180)
 
 
-board = pymata4.Pymata4()
+board = pymata4EX.Pymata4()
 
 try:
     servo(board, 5)

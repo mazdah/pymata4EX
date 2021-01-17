@@ -17,14 +17,14 @@
 
 import sys
 import time
-from pymata4 import pymata4
+from pymata4EX import pymata4EX
 
 """
 This is a demonstration of the tone methods
 """
 
-# instantiate pymata4
-board = pymata4.Pymata4()
+# instantiate pymata4EX
+board = pymata4EX.Pymata4()
 TONE_PIN=3
 try:
     # set a pin's mode for tone operations

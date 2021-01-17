@@ -17,7 +17,7 @@
 
 import sys
 import time
-from pymata4 import pymata4
+from pymata4EX import pymata4EX
 
 """
 This file demonstrates analog input using both callbacks and
@@ -64,7 +64,7 @@ def analog_in(my_board, pin):
     difference of 5 or more between the current and
     last value reported.
 
-    :param my_board: a pymata4 instance
+    :param my_board: a pymata4EX instance
 
     :param pin: Arduino pin number
     """
@@ -85,7 +85,7 @@ def analog_in(my_board, pin):
         sys.exit(0)
 
 
-# instantiate pymata4
-board = pymata4.Pymata4()
+# instantiate pymata4EX
+board = pymata4EX.Pymata4()
 
 analog_in(board, ANALOG_PIN)

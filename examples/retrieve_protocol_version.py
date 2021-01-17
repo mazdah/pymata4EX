@@ -17,7 +17,7 @@
 
 import sys
 
-from pymata4 import pymata4
+from pymata4EX import pymata4EX
 
 """
 This example retrieves the Firmata sketch protocol number.
@@ -28,13 +28,13 @@ def retrieve_protocol_version(my_board):
     """
     Retrieve and print the protocol version
 
-    :param my_board: pymata4
+    :param my_board: pymata4EX
     """
 
     print(f'Protocol Version: {my_board.get_protocol_version()}')
 
 
-board = pymata4.Pymata4()
+board = pymata4EX.Pymata4()
 try:
     retrieve_protocol_version(board)
     board.shutdown()

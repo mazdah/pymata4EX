@@ -17,7 +17,7 @@
 import sys
 import time
 
-from pymata4 import pymata4
+from pymata4EX import pymata4EX
 
 """
 Setup a pin for digital output and output a signal
@@ -51,7 +51,7 @@ def blink(my_board, pin):
     my_board.shutdown()
 
 
-board = pymata4.Pymata4()
+board = pymata4EX.Pymata4()
 try:
     blink(board, DIGITAL_PIN)
 except KeyboardInterrupt:

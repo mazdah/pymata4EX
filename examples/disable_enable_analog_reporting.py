@@ -17,7 +17,7 @@
 
 import time
 import sys
-from pymata4 import pymata4
+from pymata4EX import pymata4EX
 
 """
 Test disable and enable analog reporting
@@ -47,7 +47,7 @@ def analog_reporting(my_board, pin):
      allowing you to manipulate the pin to verify that
      callbacks are not generated
 
-     :param my_board: a pymata4 instance
+     :param my_board: a pymata4EX instance
      :param pin: Arduino pin number
      """
 
@@ -87,7 +87,7 @@ def analog_reporting(my_board, pin):
         sys.exit(0)
 
 
-board = pymata4.Pymata4()
+board = pymata4EX.Pymata4()
 
 try:
     analog_reporting(board, ANALOG_PIN)

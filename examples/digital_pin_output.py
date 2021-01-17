@@ -17,7 +17,7 @@
 
 import sys
 import time
-from pymata4 import pymata4
+from pymata4EX import pymata4EX
 
 """
 Setup a pin for digital output and output
@@ -46,7 +46,7 @@ def blink(my_board, pin):
         my_board.digital_pin_write(pin, 0)
         time.sleep(1)
 
-board = pymata4.Pymata4()
+board = pymata4EX.Pymata4()
 try:
     blink(board, 9)
     board.shutdown()

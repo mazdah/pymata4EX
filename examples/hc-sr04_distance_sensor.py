@@ -17,7 +17,7 @@
 
 import sys
 import time
-from pymata4 import pymata4
+from pymata4EX import pymata4EX
 
 """
 This program continuously monitors an HC-SR04 Ultrasonic Sensor
@@ -61,7 +61,7 @@ def sonar(my_board, trigger_pin, echo_pin, callback):
             sys.exit(0)
 
 
-board = pymata4.Pymata4()
+board = pymata4EX.Pymata4()
 try:
     sonar(board, TRIGGER_PIN, ECHO_PIN, the_callback)
     board.shutdown()

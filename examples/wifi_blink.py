@@ -17,7 +17,7 @@
 import sys
 import time
 
-from pymata4 import pymata4
+from pymata4EX import pymata4EX
 
 """
 This program tests an ESP-8266 using StandardFirmataWiFi.
@@ -57,7 +57,7 @@ def blink(my_board, pin):
     my_board.shutdown()
 
 
-board = pymata4.Pymata4(ip_address=IP_ADDRESS, ip_port=IP_PORT)
+board = pymata4EX.Pymata4(ip_address=IP_ADDRESS, ip_port=IP_PORT)
 try:
     blink(board, DIGITAL_PIN)
 except KeyboardInterrupt:

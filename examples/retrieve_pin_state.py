@@ -17,7 +17,7 @@
 
 import sys
 
-from pymata4 import pymata4
+from pymata4EX import pymata4EX
 
 
 # This example manipulates a PWM pin and retrieves its pin
@@ -42,7 +42,7 @@ def retrieve_pin_state(my_board):
     print(f'You should see [9, 3, 0]   and have received: {pin_state}')
 
 
-board = pymata4.Pymata4()
+board = pymata4EX.Pymata4()
 try:
     retrieve_pin_state(board)
     board.shutdown()

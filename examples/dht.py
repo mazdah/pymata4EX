@@ -17,7 +17,7 @@
 
 import time
 import sys
-from pymata4 import pymata4
+from pymata4EX import pymata4EX
 
 """
 Setup a pin for dht mode
@@ -58,7 +58,7 @@ def dht(my_board, callback=None):
      digital input. Any changes on this pin will
      be reported through the call back function.
 
-     :param my_board: a pymata4 instance
+     :param my_board: a pymata4EX instance
      :param callback: callback funtion
      """
 
@@ -99,7 +99,7 @@ def dht(my_board, callback=None):
             sys.exit(0)
 
 
-board = pymata4.Pymata4()
+board = pymata4EX.Pymata4()
 
 try:
     dht(board, the_callback)

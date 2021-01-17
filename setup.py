@@ -7,8 +7,8 @@ with open('README.md') as f:
 
 
 setup(
-    name='pymata4-for-test',
-    packages=['pymata4'],
+    name='pymata4EX',
+    packages=['pymata4EX'],
     install_requires=['pyserial'],
 
     version='0.1',
@@ -16,10 +16,10 @@ setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
 
-    author='Alan Yorinks',
-    author_email='MisterYsLab@gmail.com',
-    url='https://github.com/mazdah/pymata4-for-test.git',
-    download_url='https://github.com/mazdah/pymata4-for-test.git',
+    author='Alan Yorinks with Mazdah',
+    author_email='MisterYsLab@gmail.com, woohj70@gmail.com',
+    url='https://github.com/mazdah/pymata4EX.git',
+    download_url='https://github.com/mazdah/pymata4EX.git',
     keywords=['Firmata', 'Arduino', 'Protocol', 'Python'],
     classifiers=[
         'Development Status :: 5 - Production/Stable',

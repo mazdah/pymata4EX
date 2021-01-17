@@ -17,7 +17,7 @@
 
 import sys
 import time
-from pymata4 import pymata4
+from pymata4EX import pymata4EX
 
 """
 This example demonstrates running a stepper motor
@@ -31,7 +31,7 @@ def stepper(my_board, steps_per_rev, pins):
     Set the motor control control pins to stepper mode.
     Rotate the motor.
 
-    :param my_board: pymata4
+    :param my_board: pymata4EX
     :param steps_per_rev: Number of steps per motor revolution
     :param pins: A list of the motor control pins
     """
@@ -41,7 +41,7 @@ def stepper(my_board, steps_per_rev, pins):
     my_board.stepper_write(20, 500)
 
 
-board = pymata4.Pymata4()
+board = pymata4EX.Pymata4()
 try:
     stepper(board, NUM_STEPS, ARDUINO_PINS)
     board.shutdown()

@@ -17,7 +17,7 @@
 import argparse
 import sys
 import time
-from pymata4 import pymata4
+from pymata4EX import pymata4EX
 
 """
 This file demonstrates analog input using both callbacks and
@@ -52,8 +52,8 @@ class MonitorAnalogPin:
         self.CB_VALUE = 2  # reported value
         self.CB_TIME = 3  # raw time stamp
 
-        # instantiate pymata4
-        self.board = pymata4.Pymata4()
+        # instantiate pymata4EX
+        self.board = pymata4EX.Pymata4()
 
         # set the pin mode for analog input
         self.board.set_pin_mode_analog_input(self.analog_pin, self.the_callback, self.differential)

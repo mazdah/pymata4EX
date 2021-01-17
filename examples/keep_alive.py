@@ -17,7 +17,7 @@
 
 import time
 import sys
-from pymata4 import pymata4
+from pymata4EX import pymata4EX
 
 """
 Demonstrate the keep-alive functionality
@@ -39,7 +39,7 @@ def keep_alive_test(pin_number):
     :param pin_number: A pin with an LED connected to it
     """
 
-    board = pymata4.Pymata4()
+    board = pymata4EX.Pymata4()
 
     # set the as a digital output
     board.set_pin_mode_digital_output(pin_number)
