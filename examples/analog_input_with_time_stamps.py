@@ -86,6 +86,6 @@ def analog_in(my_board, pin):
 
 
 # instantiate pymata4EX
-board = pymata4EX.Pymata4()
+board = pymata4EX.Pymata4EX()
 
 analog_in(board, ANALOG_PIN)

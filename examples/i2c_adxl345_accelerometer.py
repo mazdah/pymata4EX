@@ -67,7 +67,7 @@ def adxl345(my_board):
             sys.exit(0)
 
 
-board = pymata4EX.Pymata4()
+board = pymata4EX.Pymata4EX()
 try:
     adxl345(board)
 except KeyboardInterrupt:

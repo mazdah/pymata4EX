@@ -73,7 +73,7 @@ def digital_in_pullup(my_board, pin):
             sys.exit(0)
 
 
-board = pymata4EX.Pymata4()
+board = pymata4EX.Pymata4EX()
 try:
     digital_in_pullup(board, DIGITAL_PIN)
     board.shutdown()

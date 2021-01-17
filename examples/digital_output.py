@@ -51,7 +51,7 @@ def blink(my_board, pin):
     my_board.shutdown()
 
 
-board = pymata4EX.Pymata4()
+board = pymata4EX.Pymata4EX()
 try:
     blink(board, DIGITAL_PIN)
 except KeyboardInterrupt:

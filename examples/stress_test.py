@@ -52,7 +52,7 @@ def stress_test(my_board, loop_count):
     print(f'Execution time: {time.time() - start_time} seconds for {loop_count} iterations.')
 
 
-board = pymata4EX.Pymata4()
+board = pymata4EX.Pymata4EX()
 try:
     stress_test(board, 10000)
     board.shutdown()

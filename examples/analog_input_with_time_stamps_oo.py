@@ -53,7 +53,7 @@ class MonitorAnalogPin:
         self.CB_TIME = 3  # raw time stamp
 
         # instantiate pymata4EX
-        self.board = pymata4EX.Pymata4()
+        self.board = pymata4EX.Pymata4EX()
 
         # set the pin mode for analog input
         self.board.set_pin_mode_analog_input(self.analog_pin, self.the_callback, self.differential)

@@ -61,7 +61,7 @@ def sonar(my_board, trigger_pin, echo_pin, callback):
             sys.exit(0)
 
 
-board = pymata4EX.Pymata4()
+board = pymata4EX.Pymata4EX()
 try:
     sonar(board, TRIGGER_PIN, ECHO_PIN, the_callback)
     board.shutdown()

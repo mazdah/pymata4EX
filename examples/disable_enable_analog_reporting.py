@@ -87,7 +87,7 @@ def analog_reporting(my_board, pin):
         sys.exit(0)
 
 
-board = pymata4EX.Pymata4()
+board = pymata4EX.Pymata4EX()
 
 try:
     analog_reporting(board, ANALOG_PIN)

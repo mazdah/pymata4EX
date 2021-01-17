@@ -42,7 +42,7 @@ def retrieve_pin_state(my_board):
     print(f'You should see [9, 3, 0]   and have received: {pin_state}')
 
 
-board = pymata4EX.Pymata4()
+board = pymata4EX.Pymata4EX()
 try:
     retrieve_pin_state(board)
     board.shutdown()

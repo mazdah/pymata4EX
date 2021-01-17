@@ -50,7 +50,7 @@ def set_intensity(my_board, pin):
     my_board.pwm_write(pin, 0)
 
 
-board = pymata4EX.Pymata4()
+board = pymata4EX.Pymata4EX()
 set_intensity(board, 9)
 
 # here we clean up after the program completes.

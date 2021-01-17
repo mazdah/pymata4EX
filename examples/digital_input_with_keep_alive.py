@@ -78,7 +78,7 @@ def digital_in(my_board, pin):
             board.shutdown()
             sys.exit(0)
 
-board = pymata4EX.Pymata4()
+board = pymata4EX.Pymata4EX()
 
 try:
     digital_in(board, DIGITAL_PIN)

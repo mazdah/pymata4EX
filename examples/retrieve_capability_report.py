@@ -73,7 +73,7 @@ def retrieve_capability_report(my_board):
 
 
 # instantiate pymata4EX
-board = pymata4EX.Pymata4()
+board = pymata4EX.Pymata4EX()
 
 try:
     # run the program

@@ -87,7 +87,7 @@ def digital_in(my_board, pin):
         time.sleep(POLL_TIME)
 
 
-board = pymata4EX.Pymata4()
+board = pymata4EX.Pymata4EX()
 
 try:
     digital_in(board, DIGITAL_PIN)

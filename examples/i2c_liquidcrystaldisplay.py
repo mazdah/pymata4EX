@@ -56,14 +56,14 @@ class LiquidCrystal_I2C:
     def write(self, value: int):
         self.send(value, self.REGISTER_SELECT_BIT)
 
-    def __init__(self, address: int, column: int, row: int, board: pymata4EX.Pymata4, dotsize: int = 1) -> None:
+    def __init__(self, address: int, column: int, row: int, board: pymata4EX.Pymata4EX, dotsize: int = 1) -> None:
         self.address: int = address
         self.column: int = column
         self.row: int = row
-        if not isinstance(board, pymata4EX.Pymata4):
+        if not isinstance(board, pymata4EX.Pymata4EX):
             raise AttributeError("argument board not from pymata4EX.Pymata4")
         else:
-            self.board: pymata4EX.Pymata4 = board
+            self.board: pymata4EX.Pymata4EX = board
 
         self.begin(self.column, self.row, dotsize=dotsize)
 
@@ -207,7 +207,7 @@ class LiquidCrystal_I2C:
             sleep(0.00005)
 
 
-Board = pymata4EX.Pymata4("/dev/ttyACM0")
+Board = pymata4EX.Pymata4EX("/dev/ttyACM0")
 LCD = LiquidCrystal_I2C(0x27, 0, 1, Board)
 LCD.enable_backlight()
 LCD.print("Hello, Worlds!")

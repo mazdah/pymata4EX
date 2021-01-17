@@ -34,7 +34,7 @@ def retrieve_firmware_version(my_board):
     print(my_board.get_firmware_version())
 
 
-board = pymata4EX.Pymata4()
+board = pymata4EX.Pymata4EX()
 try:
     retrieve_firmware_version(board)
     board.shutdown()

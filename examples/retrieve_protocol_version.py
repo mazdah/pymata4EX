@@ -34,7 +34,7 @@ def retrieve_protocol_version(my_board):
     print(f'Protocol Version: {my_board.get_protocol_version()}')
 
 
-board = pymata4EX.Pymata4()
+board = pymata4EX.Pymata4EX()
 try:
     retrieve_protocol_version(board)
     board.shutdown()

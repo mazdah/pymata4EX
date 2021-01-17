@@ -41,7 +41,7 @@ def stepper(my_board, steps_per_rev, pins):
     my_board.stepper_write(20, 500)
 
 
-board = pymata4EX.Pymata4()
+board = pymata4EX.Pymata4EX()
 try:
     stepper(board, NUM_STEPS, ARDUINO_PINS)
     board.shutdown()

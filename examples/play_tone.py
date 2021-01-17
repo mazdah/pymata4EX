@@ -24,7 +24,7 @@ This is a demonstration of the tone methods
 """
 
 # instantiate pymata4EX
-board = pymata4EX.Pymata4()
+board = pymata4EX.Pymata4EX()
 TONE_PIN=3
 try:
     # set a pin's mode for tone operations

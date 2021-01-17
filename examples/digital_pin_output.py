@@ -46,7 +46,7 @@ def blink(my_board, pin):
         my_board.digital_pin_write(pin, 0)
         time.sleep(1)
 
-board = pymata4EX.Pymata4()
+board = pymata4EX.Pymata4EX()
 try:
     blink(board, 9)
     board.shutdown()

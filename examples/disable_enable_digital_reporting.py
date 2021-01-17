@@ -87,7 +87,7 @@ def digital_reporting(my_board, pin):
         sys.exit(0)
 
 
-board = pymata4EX.Pymata4()
+board = pymata4EX.Pymata4EX()
 
 try:
     digital_reporting(board, DIGITAL_PIN)

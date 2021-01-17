@@ -99,7 +99,7 @@ def dht(my_board, callback=None):
             sys.exit(0)
 
 
-board = pymata4EX.Pymata4()
+board = pymata4EX.Pymata4EX()
 
 try:
     dht(board, the_callback)

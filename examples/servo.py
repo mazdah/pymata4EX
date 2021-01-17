@@ -48,7 +48,7 @@ def servo(my_board, pin):
     my_board.servo_write(pin, 180)
 
 
-board = pymata4EX.Pymata4()
+board = pymata4EX.Pymata4EX()
 
 try:
     servo(board, 5)
